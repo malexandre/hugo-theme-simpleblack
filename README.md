@@ -1,10 +1,14 @@
 # Clean and light theme for Hugo
 
-I wanted a simple, light and complete theme for Hugo. The full CSS is only 7kb, and the base skeleton is around 8kb. Everything else will be the content
+I wanted a simple, light and complete theme for Hugo. The full CSS is only 7kb, and the base skeleton is around 8kb. Everything else will be the content.
 
-## Why a new theme
+## Why a new theme
 
 I wanted the most simple & light theme. I make it for Pelican a few years back, but never published it. Now I'm porting it to Hugo, as I will use Hugo for my future blog. It's similar to Hyde, Blackburn and others, but with small diffences and optimizations to be sure to load as fast as possible, even on mobile.
+
+## Screenshots & Demo
+
+TODO
 
 ## Installation
 
@@ -31,7 +35,7 @@ If you do not specify styles/classes yourself, images will be displayed in block
 
 ## Future of the theme
 
-- [ ] Fix inline CSS path
+- [X] Fix inline CSS path
 - [ ] Better categories pages
 - [ ] Robots.txt
 - [ ] Link to Github, Twitter, others
