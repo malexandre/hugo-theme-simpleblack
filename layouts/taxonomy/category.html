@@ -1,0 +1,8 @@
+{{ define "main" }}
+    <div class="main__title">
+        {{ .Data.Singular | humanize }}<br>
+        —<br>
+        {{ .Title }}</div>
+
+    {{ partial "everylist.html" . }}
+{{ end }}

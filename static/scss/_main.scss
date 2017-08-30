@@ -1,16 +1,38 @@
 main {
   display: block;
-  margin: $base-spacing 0;
+  margin: ($base-spacing / 2) 0;
+}
+
+.main__title {
+  margin: 0;
+  padding: 0 ($base-spacing / 4);
+  width: 100%;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: $base-spacing / 2;
+  line-height: 1.04;
 }
 
 @media (min-width: $mobile-breakpoint) {
   main {
     padding-left: $small-sidebar-width;
   }
+
+  .main__title {
+    margin: auto;
+    margin-bottom: $base-spacing;
+    padding: 0 $base-spacing;
+    width: 100%;
+    max-width: $large-content-max-width;
+  }
 }
 
 @media (min-width: $large-breakpoint) {
   main {
     padding-left: $large-sidebar-width;
+    margin: $base-spacing 0;
   }
 }

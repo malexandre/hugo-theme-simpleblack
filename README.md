@@ -36,8 +36,7 @@ If you do not specify styles/classes yourself, images will be displayed in block
 ## Future of the theme
 
 - [X] Fix inline CSS path
-- [ ] Better categories pages
-- [ ] Robots.txt
+- [X] Better categories pages
 - [ ] Link to Github, Twitter, others
 - [X] Disqus (async for better loading performance)
 - [X] Google Analytics (async for better loading performance)

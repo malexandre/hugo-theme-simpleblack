@@ -28,7 +28,7 @@ article {
 
   &__subtitle {
     font-size: 0.8rem;
-    margin-bottom: $base-spacing;
+    margin-bottom: $base-spacing / 2;
 
     .category-link {
       color: $color;
@@ -46,7 +46,7 @@ article {
 
   div,
   p {
-    line-height: 1.25rem;
+    line-height: 1.5;
     text-align: justify;
     text-rendering: optimizelegibility !important;
     letter-spacing: 0.03rem;
@@ -68,9 +68,9 @@ article {
   h4,
   h5,
   h6 {
-    letter-spacing: -0.04rem;
+    letter-spacing: -.028rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 1.04;
     font-family: $sans-serif;
   }
 
@@ -297,7 +297,11 @@ article {
     margin: auto;
     padding: 0 $base-spacing;
     width: 100%;
-    max-width: 800px;
+    max-width: $large-content-max-width;
+  }
+
+  .article__subtitle {
+    margin-bottom: $base-spacing;
   }
 
   .article__content {
