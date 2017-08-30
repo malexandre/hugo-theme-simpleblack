@@ -39,8 +39,8 @@ If you do not specify styles/classes yourself, images will be displayed in block
 - [ ] Better categories pages
 - [ ] Robots.txt
 - [ ] Link to Github, Twitter, others
-- [ ] Disqus (async for better loading performance)
-- [ ] Google Analytics (async for better loading performance)
+- [X] Disqus (async for better loading performance)
+- [X] Google Analytics (async for better loading performance)
 - [ ] Adding an "author box" at the end of each post
 - [ ] Class for inline images
 - [ ] Image lazyloading

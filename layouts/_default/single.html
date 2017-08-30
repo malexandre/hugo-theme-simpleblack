@@ -2,9 +2,12 @@
 
 <article>
     {{ partial "content-title.html" . }}
+
     <div class="article__content">
         {{ .Content }}
+        {{ template "_internal/disqus.html" . }}
     </div>
 </article>
+
 
 {{ end }}
