@@ -1,0 +1,20 @@
+{
+  "name": "hugo-theme-simpleblack",
+  "version": "1.0.0",
+  "description": "Clean, light and simple blog theme for Hugo",
+  "main": "gulpfile.js",
+  "author": "Marc Alexandre <github@malexandre.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-malexandre": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

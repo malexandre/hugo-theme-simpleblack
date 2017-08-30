@@ -1,0 +1,309 @@
+article {
+  display: block;
+  margin-bottom: $base-spacing;
+}
+.article__content,
+.article__title {
+  margin: 0;
+  padding: 0 ($base-spacing / 4);
+  width: 100%;
+}
+
+.article__title {
+  h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.05rem;
+
+    & > a {
+      color: $color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 0.8rem;
+    margin-bottom: $base-spacing;
+
+    .category-link {
+      color: $color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.article__content {
+  font-family: $serif;
+
+  div,
+  p {
+    line-height: 1.25rem;
+    text-align: justify;
+    text-rendering: optimizelegibility !important;
+    letter-spacing: 0.03rem;
+  }
+
+  a {
+    color: $color;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: -0.04rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    font-family: $sans-serif;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  h6 {
+    font-size: 1.4rem;
+  }
+
+  table {
+    width: 100%;
+    background: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+
+    th {
+      padding: 5px 10px;
+      font-weight: bold;
+      border-bottom: 2px solid #909ba2;
+    }
+    td {
+      padding: 5px 10px;
+    }
+    tr {
+      &:nth-child(2n) {
+        background: #f5f5f5;
+      }
+
+      &:hover {
+        background: #bdbdbd;
+      }
+    }
+  }
+
+  hr {
+    outline: none;
+    border: none;
+    border-top: 1px solid #eeeeee;
+  }
+
+  dl {
+    width: 100%;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    dt,
+    dd {
+      display: inline-block;
+      margin: 0;
+    }
+
+    dt {
+      width: 30%;
+      text-align: right;
+      font-weight: bold;
+      clear: left;
+      float: left;
+    }
+
+    dd {
+      width: 70%;
+      padding: 0.5rem 1rem 0.5rem;
+      clear: right;
+      text-align: justify;
+    }
+
+    dd + dd {
+      float: right;
+      clear: both;
+    }
+
+    dt:first-child {
+      padding-top: 0.5rem;
+    }
+
+    dd + dt {
+      clear: both;
+      padding-top: 0.5rem;
+    }
+
+    dt + dt {
+      width: 100%;
+      float: none;
+      padding: 0 70% 0 0;
+    }
+
+    dt + dt + dd {
+      margin-top: -2rem;
+    }
+
+    dt + dt + dd + dt {
+      margin-top: 2rem;
+    }
+  }
+
+  blockquote {
+    border-left: 3px solid #ccc;
+    padding: 0 15px;
+    font-style: italic;
+    margin: 1.5rem 0 0;
+
+    cite {
+      &:before {
+        content: " — ";
+        padding: 0 0.3rem;
+      }
+    }
+
+    & > p:first-child {
+      margin: 0;
+    }
+  }
+
+  acronym,
+  abbr {
+    border-bottom: 1px dotted $color;
+    text-decoration: none;
+    cursor: help;
+  }
+
+  & > code {
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 3px;
+    color: #ffffff;
+    background: #333;
+  }
+
+  kbd {
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 3px;
+    border: 1px solid #333;
+  }
+
+  ul {
+    padding-left: $base-spacing / 2;
+    list-style: none;
+    list-style-position: outside;
+
+    li {
+      text-indent: 0;
+      list-style: disc;
+    }
+  }
+
+  ol {
+    padding-left: $base-spacing / 2;
+    list-style: none;
+    list-style-position: outside;
+
+    li {
+      text-indent: 0;
+      list-style: decimal;
+    }
+  }
+
+  nav > ul > li {
+    list-style: none;
+  }
+
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+    margin: auto;
+  }
+
+  figcaption {
+    font-family: $sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: $base-spacing / 4;
+    margin-bottom: $base-spacing;
+  }
+
+  .highlight,
+  & > pre {
+    padding: ($base-spacing / 4) ($base-spacing / 2);
+    overflow: auto;
+    margin: $base-spacing (-$base-spacing / 4);
+    color: #ffffff;
+
+    pre {
+      font-family: $monospace;
+    }
+  }
+
+  & > pre {
+    background: #272822;
+    font-family: $monospace;
+  }
+}
+
+@media (min-width: $mobile-breakpoint) {
+  .article__content,
+  .article__title {
+    margin: auto;
+    padding: 0 $base-spacing;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .article__content {
+    div,
+    p {
+      padding: 0 0 1rem 0;
+    }
+  }
+}

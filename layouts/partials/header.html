@@ -1,0 +1,17 @@
+<header>
+    {{ if isset .Site.Params "avatar" }}
+    <img class="header__avatar" src="{{ .Site.Params.Avatar }}">
+    {{ end }}
+    <a href="/" class="header__title">{{ .Site.Title }}</a>
+    <div class="header__subtitle">{{ .Site.Params.Subtitle }}</div>
+    <hr class="header__separator" />
+    <nav>
+        <a class="nav__item" href="/">Home</a>
+        ·
+        <a class="nav__item" href="/about">About</a>
+        {{ if isset .Site.Params "email" }}
+        ·
+        <a class="nav__item" href="mailto:{{ .Site.Params.Email }}">Contact</a>
+        {{ end }}
+    </nav>
+</header>

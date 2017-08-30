@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+{{ range $paginator.Pages }}
+    {{ partial "summary.html" . }}
+{{ end }}
+
+{{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+<nav style="text-align: center">
+    {{ if .Paginator.HasPrev }}
+    <a class="pure-button" rel="prev" href="{{ .Paginator.Prev.URL }}">
+        « Previous
+    </a>
+    {{ end }}
+
+    {{ if .Paginator.HasNext }}
+    <a class="pure-button" rel="next" href="{{ .Paginator.Next.URL }}">
+        Next »
+    </a>
+    {{ end }}
+</nav>
+{{ end }}
+
+{{ end }}

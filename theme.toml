@@ -1,0 +1,24 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Thagor"
+license = "MIT"
+licenselink = "https://github.com/malexandre/yourtheme/blob/master/LICENSE.md"
+description = "Clean and light theme meant to load as fast as possible, even on mobile."
+homepage = "http://malexandre.fr/"
+tags = ["blog", "clean", "light", "fast"]
+features = [
+  "Mobile-optimized",
+  "Responsive Design",
+  "Google Analytics",
+  "Disqus",
+  "Pagination",
+  "Reading time",
+  "Author box",
+  "Word Count"
+]
+min_version = "0.26"
+
+[author]
+  name = "Marc Alexandre"
+  homepage = "http://malexandre.fr"

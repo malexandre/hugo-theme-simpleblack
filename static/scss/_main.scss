@@ -1,0 +1,16 @@
+main {
+  display: block;
+  margin: $base-spacing 0;
+}
+
+@media (min-width: $mobile-breakpoint) {
+  main {
+    padding-left: $small-sidebar-width;
+  }
+}
+
+@media (min-width: $large-breakpoint) {
+  main {
+    padding-left: $large-sidebar-width;
+  }
+}
