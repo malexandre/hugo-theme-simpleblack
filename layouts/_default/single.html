@@ -5,6 +5,7 @@
 
     <div class="article__content">
         {{ .Content }}
+        {{ partial "author.html" . }}
         {{ template "_internal/disqus.html" . }}
     </div>
 </article>

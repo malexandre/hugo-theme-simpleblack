@@ -1,0 +1,15 @@
+<author>
+    {{ if isset .Site.Params "avatar" }}
+    <img class="author__avatar" src="{{ .Site.Params.Avatar }}">
+    {{ end }}
+    <div class="author__infos">
+        <div class="author__name">{{ .Site.Params.Author }}</div>
+        <div class="author__description">
+            {{ if isset .Site.Params "avatar" }}
+                {{ .Site.Params.AuthorDescription }}
+            {{ else }}
+                {{ .Site.Params.Subtitle }}
+            {{ end }}
+        </div>
+    </div>
+</author>

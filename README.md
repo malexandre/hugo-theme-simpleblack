@@ -40,7 +40,7 @@ If you do not specify styles/classes yourself, images will be displayed in block
 - [ ] Link to Github, Twitter, others
 - [X] Disqus (async for better loading performance)
 - [X] Google Analytics (async for better loading performance)
-- [ ] Adding an "author box" at the end of each post
+- [X] Adding an "author box" at the end of each post
 - [ ] Class for inline images
 - [ ] Image lazyloading
 - [ ] Customizable menu? Maybe just about?
