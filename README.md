@@ -22,6 +22,7 @@ This options are available on your `config.toml`:
 [params]
   subtitle = "The site description in the sidebar. It can be as long as you want."
   author = "Your Name"
+  authorDescription = "Your description for the Author box at the end of posts"
   avatar = "/avatar.jpeg"  # Root is your static folder
   email = "your@email.com"
   themepath = "themes/simpleblack"  # Use this params if you want to inline the CSS in the <head>
