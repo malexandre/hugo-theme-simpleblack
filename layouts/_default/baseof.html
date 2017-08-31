@@ -10,6 +10,7 @@
     {{ else }}
     <link rel="stylesheet" href="/css/styles.min.css">
     {{ end }}
+    {{ partialCached "customizable-head.html" . }}
 </head>
 <body>
     {{ partialCached "header.html" . }}
@@ -19,5 +20,6 @@
     </main>
 
     {{ template "_internal/google_analytics_async.html" . }}
+    {{ partialCached "customizable-end-of-body.html" . }}
 </body>
 </html>

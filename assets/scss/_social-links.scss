@@ -1,0 +1,12 @@
+.header__social,
+.author__social {
+  margin: ($base-spacing / 4) auto;
+
+  a {
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+}
+.header__social a {
+  color: $header-color;
+}
