@@ -1,6 +1,6 @@
 # Clean and light theme for Hugo
 
-I wanted a simple, light and complete theme for Hugo. The full CSS is only 7kb, and the base skeleton is around 8kb. Everything else will be the content.
+I wanted a simple, light and complete theme for Hugo. The full CSS is only 7kb, and the base skeleton with css inlined is around 10kb. Everything else will be your content.
 
 ## Why a new theme
 
