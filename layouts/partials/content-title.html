@@ -3,6 +3,6 @@
     <div class="article__title__subtitle">
         {{ range $idx, $elem := .Params.categories }}{{ if $idx }}, {{ end }}<a class="category-link" href="/categories/{{ lower $elem }}">{{ $elem }}</a>{{ end }} ·
         Published the {{ .Date.Format "02 Jan 06" }}<br>
-        {{ .FuzzyWordCount }} words · {{ .ReadingTime }} min read
+        {{ .WordCount }} words · {{ .ReadingTime }} min read
     </div>
 </div>
