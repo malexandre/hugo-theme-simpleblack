@@ -55,6 +55,11 @@ header {
   width: 30%;
 }
 
+.header__social {
+  text-align: center;
+  display: none;
+}
+
 @media (min-width: $mobile-breakpoint) {
   header {
     width: $small-sidebar-width;
@@ -66,7 +71,8 @@ header {
     padding: ($base-spacing * 2) ($base-spacing / 2);
   }
 
-  .header__avatar {
+  .header__avatar,
+  .header__social {
     display: block;
   }
 }

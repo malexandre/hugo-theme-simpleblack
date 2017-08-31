@@ -2,7 +2,7 @@ const gulp = require('gulp')
 const plugins = require('gulp-load-plugins')()
 
 const scss = () => {
-    gulp.src('static/scss/styles.scss')
+    gulp.src('assets/scss/styles.scss')
         .pipe(plugins.plumber())
         .pipe(plugins.sass())
         .pipe(plugins.csso({ comments: false }))
@@ -12,7 +12,7 @@ const scss = () => {
 
 gulp.task('scss', scss)
 gulp.task('watchers', ['scss'], () => {
-    gulp.watch('static/scss/**/*.scss', ['scss'])
+    gulp.watch('assets/scss/**/*.scss', ['scss'])
 })
 
 gulp.task('default', ['watchers'])

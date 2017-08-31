@@ -29,6 +29,10 @@ author {
   padding: 0;
 }
 
+.article__content .author__social {
+  text-align: center;
+}
+
 @media (min-width: $mobile-breakpoint) {
   author {
     margin: $base-spacing auto;
