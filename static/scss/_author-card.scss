@@ -31,8 +31,7 @@ author {
 
 @media (min-width: $mobile-breakpoint) {
   author {
-    margin: auto;
-    margin-bottom: $base-spacing;
+    margin: $base-spacing auto;
   }
 
   .article__content .author__avatar {
