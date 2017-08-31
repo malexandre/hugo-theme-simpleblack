@@ -28,7 +28,7 @@ This options are available on your `config.toml`:
   themepath = "themes/simpleblack"  # Use this params if you want to inline the CSS in the <head>
 ```
 
-You should have a content for your `/about`.
+You need to have `about.md` inside your content folder. And if you want to have links to your social profiles (Github for example), create a partial `social-links.html`. It will override the default empty partial. I didn't want to include `font-awesome` to the theme to not include unused fonts & css. For my own blog, I'm using a subset build with [http://fontello.com/](http://fontello.com/) to use icons only for the profiles I want.
 
 ## Formatting rules
 
@@ -38,7 +38,7 @@ If you do not specify styles/classes yourself, images will be displayed in block
 
 - [X] Fix inline CSS path
 - [X] Better categories pages
-- [ ] Link to Github, Twitter, others
+- [X] Link to Github, Twitter, others
 - [X] Disqus (async for better loading performance)
 - [X] Google Analytics (async for better loading performance)
 - [X] Adding an "author box" at the end of each post
