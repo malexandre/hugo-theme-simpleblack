@@ -12,7 +12,12 @@ TODO
 
 ## Installation
 
-TODO
+From your blog directory:
+
+```bash
+cd themes
+git clone https://github.com/malexandre/hugo-theme-simpleblack
+```
 
 ## Configuration
 
