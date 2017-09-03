@@ -1,5 +1,7 @@
 header {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: $header-background-color;
   color: $header-color;
   text-align: center;
@@ -23,7 +25,6 @@ header {
 }
 
 .header__avatar {
-  margin: auto;
   height: 100px;
   width: 100px;
   border-radius: 100px;
